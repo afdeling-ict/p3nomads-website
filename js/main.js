@@ -150,7 +150,9 @@
   }
 
   function resizeWater() {
-    const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
+    // The water is soft and blurred by nature, so it is drawn at reduced
+    // resolution and scaled up by CSS. This keeps the processor free.
+    const ratio = 0.5;
     canvas.width = Math.round(window.innerWidth * ratio);
     canvas.height = Math.round(window.innerHeight * ratio);
     if (water.gl) {
@@ -194,9 +196,10 @@
     }
     if (water.running) return;
     water.running = true;
+    let last = 0;
     const frame = (now) => {
       if (!water.running) return;
-      drawWater(now);
+      if (now - last >= 33) { last = now; drawWater(now); } // at most 30 frames per second
       requestAnimationFrame(frame);
     };
     requestAnimationFrame(frame);
@@ -264,7 +267,14 @@
     figures.forEach((figure) => observer.observe(figure));
   }
 
-  startWater();
+  // Start the water only after the page has loaded and the browser is idle,
+  // and not at all when the visitor asked to save data.
+  const saveData = Boolean(navigator.connection && navigator.connection.saveData);
+  const whenIdle = (task) => ("requestIdleCallback" in window ? requestIdleCallback(task, { timeout: 2000 }) : setTimeout(task, 300));
+  if (!saveData) {
+    if (document.readyState === "complete") whenIdle(startWater);
+    else window.addEventListener("load", () => whenIdle(startWater), { once: true });
+  }
   watchSections();
   closeMenuOnChoice();
   countFigures();

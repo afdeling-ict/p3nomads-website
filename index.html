@@ -6,6 +6,8 @@
   <title>P3nomads | We get your partners aligned, so your project gets built</title>
   <meta name="description" content="P3nomads helps public and private parties form the partnerships that international projects need: well structured, fundable, bankable and built to last.">
   <meta name="theme-color" content="#104E8A">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://p3nomads.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="P3nomads | We get your partners aligned, so your project gets built">
@@ -407,14 +409,47 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "P3nomads B.V.",
-    "url": "https://p3nomads.com/",
-    "logo": "https://p3nomads.com/img/p3nomads-logo.png",
-    "slogan": "Promoting powerful partnerships",
-    "foundingDate": "2018",
-    "areaServed": "Worldwide",
-    "description": "Advisory firm for public-public, public-private and private-private partnerships in international projects."
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://p3nomads.com/#organization",
+        "name": "P3nomads B.V.",
+        "url": "https://p3nomads.com/",
+        "logo": "https://p3nomads.com/img/p3nomads-logo.png",
+        "image": "https://p3nomads.com/img/p3nomads-logo.png",
+        "description": "Advisory firm that brings governments, companies and financiers together around international infrastructure projects: partnership structuring, funding and financing, procurement, independent review and contract management.",
+        "foundingDate": "2018",
+        "address": { "@type": "PostalAddress", "addressCountry": "NL" },
+        "identifier": { "@type": "PropertyValue", "propertyID": "KvK", "value": "96973765" },
+        "areaServed": "Worldwide",
+        "knowsAbout": ["Public-private partnerships", "Project structuring", "Funding and financing", "Bankability", "Public procurement", "Competitive dialogue", "Early contractor involvement", "Contract management", "DBFM contracts"],
+        "founder": [{ "@id": "https://p3nomads.com/#farid-bouchdak" }, { "@id": "https://p3nomads.com/#obbe-wassenaar" }]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://p3nomads.com/#farid-bouchdak",
+        "name": "Farid Bouchdak",
+        "jobTitle": "Partner, PPP and contract management",
+        "worksFor": { "@id": "https://p3nomads.com/#organization" },
+        "sameAs": ["https://www.linkedin.com/in/bouchdak/"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://p3nomads.com/#obbe-wassenaar",
+        "name": "Obbe Wassenaar",
+        "jobTitle": "Partner, PPP and tendering",
+        "worksFor": { "@id": "https://p3nomads.com/#organization" },
+        "sameAs": ["https://www.linkedin.com/in/obbe-wassenaar-464914b"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://p3nomads.com/#website",
+        "url": "https://p3nomads.com/",
+        "name": "P3nomads",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://p3nomads.com/#organization" }
+      }
+    ]
   }
   </script>
 </body>
