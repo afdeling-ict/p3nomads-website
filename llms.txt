@@ -1,0 +1,31 @@
+# P3nomads
+
+> P3nomads B.V. is a Dutch advisory firm that brings governments, companies and financiers together around international infrastructure projects. It helps partners form public-public, public-private and private-private partnerships that can be funded, financed and delivered.
+
+Services: project structuring, funding and financing (including review of development fees, budgets and value for money), independent procurement review for financiers up to the statement of no objection, procurement and tendering (specialisms: competitive dialogue and early contractor involvement), contract management, and training with simulations.
+
+Current clients include Arcadis and Invest International. Founded in 2018 by Farid Bouchdak and Obbe Wassenaar. Introductory meetings can be booked at https://cal.com/faridbouchdak/15min.
+
+## Pages
+
+- [Home](https://p3nomads.com/): who we are, what we do and how we work
+- [Competitive dialogue](https://p3nomads.com/competitive-dialogue.html): the procedure, its principles and our one-day dialogue simulation
+- [Clients and projects](https://p3nomads.com/clients.html): all clients, with their projects
+- [Privacy](https://p3nomads.com/privacy.html): how we handle personal data
+
+## Projects
+
+- [Cool Port Addis](https://p3nomads.com/projects/cool-port-addis.html): Ethiopia; procurement advice and independent review
+- [Naivasha and Sabaki bulk water](https://p3nomads.com/projects/naivasha-sabaki-water.html): Kenya; review of fees, agreements and value for money
+- [Coastal protection of Port-Bouët](https://p3nomads.com/projects/port-bouet-coastal-protection.html): Côte d'Ivoire; procurement review and negotiation advice
+- [Port of Ziguinchor](https://p3nomads.com/projects/port-of-ziguinchor.html): Senegal; contract review
+- [Maintenance of a specialised hospital in Hebron](https://p3nomads.com/projects/prcs-hospital-hebron.html): Palestinian Territories; review of bidding documents
+- [Coastal protection of the Nile Delta](https://p3nomads.com/projects/nile-delta-coastal-protection.html): Egypt; procurement plan, PPP and contract management
+- [Water as Leverage Cartagena](https://p3nomads.com/projects/water-as-leverage-cartagena.html): Colombia; funding and financing
+- [Dredging at the San Vicente terminal](https://p3nomads.com/projects/enap-san-vicente-dredging.html): Chile; advice on early contractor involvement
+- [Sustainable water supply in Soc Trang](https://p3nomads.com/projects/soc-trang-water-supply.html): Vietnam; PPP scoping study
+- [Spending review of Brussels road infrastructure](https://p3nomads.com/projects/brussels-road-infrastructure.html): Belgium; spending review: procurement and contracting
+- [Quality in public procurement](https://p3nomads.com/projects/bratislava-procurement-quality.html): Slovakia; knowledge sessions on procurement
+- [DBFM simulations for Rijkswaterstaat](https://p3nomads.com/projects/rws-dbfm-simulations.html): Netherlands; simulation content and game design
+- [Toll system on the Blankenburg Connection and ViA15](https://p3nomads.com/projects/rdw-toll-system.html): Netherlands; interface requirements
+- [Rijnkade Arnhem](https://p3nomads.com/projects/rijnkade-arnhem.html): Netherlands; realisation agreement

@@ -107,6 +107,12 @@
     const gl = canvas.getContext("webgl2", { antialias: false, alpha: false, powerPreference: "low-power" });
     if (!gl) return; // CSS gradient fallback stays visible
 
+    // Without a graphics chip the water would be drawn by the processor and
+    // slow the page down. On such devices the calm CSS gradient stays instead.
+    const info = gl.getExtension("WEBGL_debug_renderer_info");
+    const renderer = String(gl.getParameter(info ? info.UNMASKED_RENDERER_WEBGL : gl.RENDERER) || "");
+    if (/swiftshader|llvmpipe|softpipe|software|basic render/i.test(renderer)) return;
+
     try {
       const program = gl.createProgram();
       gl.attachShader(program, compile(gl, gl.VERTEX_SHADER, VERT));
