@@ -993,3 +993,87 @@ main { overflow-x: clip; }
   a { color: white; font-weight: 600; text-underline-offset: 0.25em; text-decoration-color: var(--orange); text-decoration-thickness: 1.5px; }
 }
 .company__more + .company__note { margin-top: 0.75rem; }
+
+/* --- Competitive dialogue (27 November 2026) ----------------------------- */
+
+.specialism {
+  display: grid; grid-template-columns: auto 1fr; align-items: baseline;
+  gap: 0.25rem 2rem;
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+  padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: 1.5rem; corner-shape: squircle;
+  background: var(--blue); color: var(--foam); text-decoration: none;
+  transition: background-color 0.3s, translate 0.4s var(--ease);
+  &:hover { background: var(--blue-deep); translate: 0 -3px; }
+  @media (max-width: 50rem) { grid-template-columns: 1fr; }
+}
+.specialism__label { grid-column: 1 / -1; font-size: var(--step--1); font-weight: 600; color: var(--orange-soft); }
+.specialism__title { font: 700 var(--step-2)/1.05 var(--display); letter-spacing: -0.03em; color: white; }
+.specialism__text { font-size: var(--step-1); line-height: 1.35; max-width: 34rem; }
+.specialism:hover .specialism__title { text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 0.15em; text-decoration-thickness: 3px; }
+.services dd a { font-weight: 620; }
+
+/* The funnel: the field narrows while the solutions grow */
+.funnel { margin: 0; }
+.funnel__steps {
+  counter-reset: phase;
+  display: grid; gap: 0.6rem;
+  li {
+    counter-increment: phase;
+    width: var(--w); min-width: min(100%, 31rem);
+    display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.5rem 1.25rem;
+    padding: 1.1rem 1.5rem;
+    border-radius: 999px;
+    background: color-mix(in oklch, var(--blue) calc(28% + var(--i, 0) * 1%), var(--paper));
+    color: var(--blue-ink);
+    &::before {
+      content: counter(phase);
+      display: grid; place-items: center; width: 2.4rem; aspect-ratio: 1; border-radius: 50%;
+      background: var(--blue); color: white; font: 700 var(--step--1)/1 var(--body);
+    }
+    &:last-child { background: var(--orange); &::before { background: var(--blue-ink); } }
+  }
+  h3 { font-size: var(--step-1); color: var(--blue); }
+  li:last-child h3 { color: var(--blue-ink); }
+  p { font-size: var(--step--1); font-weight: 560; justify-self: end; text-align: right; max-width: 22rem; }
+  @media (max-width: 50rem) {
+    li { width: 100%; grid-template-columns: auto 1fr; border-radius: 1.25rem; }
+    p { grid-column: 2; justify-self: start; text-align: left; }
+  }
+}
+.funnel__steps li:nth-child(2) { background: color-mix(in oklch, var(--blue) 22%, var(--paper)); }
+.funnel__steps li:nth-child(3) { background: color-mix(in oklch, var(--blue) 32%, var(--paper)); }
+.funnel figcaption { margin-top: 1.25rem; font-size: var(--step--1); font-weight: 560; }
+@supports (animation-timeline: view()) {
+  .funnel__steps li {
+    animation: narrow linear both; animation-timeline: view(); animation-range: entry 10% cover 35%;
+  }
+}
+@keyframes narrow { from { width: 100%; opacity: 0.4; } }
+
+.principles {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.25rem, 3vw, 2.5rem);
+  li { padding-top: 1.25rem; border-top: 2px solid var(--blue-ink); }
+  h3 { color: var(--blue); margin-bottom: 0.6rem; font-size: var(--step-2); }
+  @media (max-width: 56rem) { grid-template-columns: 1fr; }
+}
+
+.sim {
+  display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem clamp(1.25rem, 3vw, 2.5rem);
+  align-items: start;
+  @media (max-width: 56rem) { grid-template-columns: 1fr; }
+}
+.sim__image { grid-column: 1 / span 5; aspect-ratio: 4 / 5; @media (max-width: 56rem) { grid-column: 1 / -1; aspect-ratio: 16 / 9; } }
+.sim__facts {
+  grid-column: 7 / -1; display: grid; gap: 1.5rem;
+  > div { padding-top: 1rem; border-top: 1px solid color-mix(in oklch, white 30%, transparent); }
+  dt { font: 640 var(--step-1)/1.2 var(--display); color: white; margin-bottom: 0.4rem; }
+  @media (max-width: 56rem) { grid-column: 1 / -1; }
+}
+.quote {
+  margin: clamp(3rem, 7vw, 5rem) 0 0; max-width: 40rem;
+  p { font: 700 var(--step-3)/1 var(--display); letter-spacing: -0.035em; color: white; }
+  p::before { content: "“"; color: var(--orange); }
+  p::after { content: "”"; color: var(--orange); }
+  footer { margin-top: 1rem; color: var(--orange-soft); font-weight: 600; }
+}
