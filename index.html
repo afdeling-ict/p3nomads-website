@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P3nomads | We get your partners aligned, so your project gets built</title>
+  <meta name="description" content="P3nomads helps public and private parties form the partnerships that international projects need: well structured, fundable, bankable and built to last.">
+  <meta name="theme-color" content="#104E8A">
+  <link rel="canonical" href="https://p3nomads.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="P3nomads | We get your partners aligned, so your project gets built">
+  <meta property="og:description" content="We help public and private parties form the partnerships that international projects need: fundable, bankable and built to last.">
+  <meta property="og:url" content="https://p3nomads.com/">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <link rel="preload" href="fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- The water. Drawn by js/main.js with WebGL; the page works without it. -->
+  <canvas class="water" id="water" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="top__logo" href="#welcome" aria-label="P3nomads, back to top">
+      <img src="img/p3nomads-logo.png" alt="P3nomads" width="900" height="304">
+    </a>
+    <nav class="top__nav" aria-label="Sections">
+      <a href="#partnerships">Partnerships</a>
+      <a href="#bankability">Bankability</a>
+      <a href="#services">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="#approach">How we work</a>
+      <a href="#people">People</a>
+    </nav>
+    <a class="btn btn--warm top__cta" href="https://cal.com/faridbouchdak/15min" target="_blank" rel="noopener">Book a meeting</a>
+    <button class="top__menu" type="button" popovertarget="menu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="menu" id="menu" popover aria-label="Sections">
+    <a href="#partnerships">Partnerships</a>
+    <a href="#bankability">Bankability</a>
+    <a href="#services">Services</a>
+    <a href="#approach">How we work</a>
+    <a href="#network">Who we work with</a>
+    <a href="clients.html">Clients and projects</a>
+    <a href="#people">People</a>
+    <a class="btn btn--warm" href="https://cal.com/faridbouchdak/15min" target="_blank" rel="noopener">Book a meeting</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- 1. Welcome -->
+    <section class="hero deep" id="welcome" data-warm="0.25">
+      <div class="hero__inner">
+        <p class="hero__greeting">Welcome. Pull up a chair.</p>
+        <h1 class="hero__title">
+          <span>We</span> <span>get</span> <span>your</span> <span>partners</span> <span>aligned,</span> <span>so</span> <span>your</span> <span>project</span> <span>gets</span> <span>built.</span>
+        </h1>
+        <p class="hero__lead">
+          P3nomads brings governments, companies and financiers to one table for infrastructure projects around the world, and turns their shared ambition into a partnership that can be funded and delivered.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--warm btn--large" href="https://cal.com/faridbouchdak/15min" target="_blank" rel="noopener">Book an introductory meeting</a>
+          <a class="btn btn--quiet btn--large" href="#partnerships">See what we do</a>
+        </div>
+      </div>
+      <p class="hero__with">
+        Currently at the table with
+        <a href="clients.html#arcadis">Arcadis</a> and <a href="clients.html#invest-international">Invest International</a>
+      </p>
+    </section>
+
+    <!-- 2. One table, many partners -->
+    <section class="sheet" id="partnerships">
+      <div class="wrap">
+        <div class="intro">
+          <h2>One table, many partners.</h2>
+          <p>No road, port or coastline is built by one party alone. We bring together everyone your project needs, and keep them together.</p>
+        </div>
+
+        <div class="gather">
+          <figure class="gather__figure">
+            <svg class="table" viewBox="-20 40 680 450" role="img" aria-labelledby="table-title">
+              <title id="table-title">A round table with your project in the middle. Around it sit government, regions and cities, banks, donors, contractors, engineers and communities. P3nomads is the host.</title>
+              <g class="table__lines">
+                <line x1="320" y1="95" x2="320" y2="260"/>
+                <line x1="436.7" y1="143.3" x2="320" y2="260"/>
+                <line x1="485" y1="260" x2="320" y2="260"/>
+                <line x1="436.7" y1="376.7" x2="320" y2="260"/>
+                <line x1="203.3" y1="376.7" x2="320" y2="260"/>
+                <line x1="155" y1="260" x2="320" y2="260"/>
+                <line x1="203.3" y1="143.3" x2="320" y2="260"/>
+                <line class="table__hostline" x1="320" y1="425" x2="320" y2="260"/>
+              </g>
+              <circle class="table__ring" cx="320" cy="260" r="165"/>
+              <circle class="table__top" cx="320" cy="260" r="78"/>
+              <text class="table__project" x="320" y="255" text-anchor="middle">Your</text>
+              <text class="table__project" x="320" y="281" text-anchor="middle">project</text>
+              <g class="table__seats">
+                <circle cx="320" cy="95" r="11"/>
+                <circle cx="436.7" cy="143.3" r="11"/>
+                <circle cx="485" cy="260" r="11"/>
+                <circle cx="436.7" cy="376.7" r="11"/>
+                <circle cx="203.3" cy="376.7" r="11"/>
+                <circle cx="155" cy="260" r="11"/>
+                <circle cx="203.3" cy="143.3" r="11"/>
+              </g>
+              <circle class="table__host" cx="320" cy="425" r="15"/>
+              <g class="table__labels">
+                <text x="320" y="70" text-anchor="middle">Government</text>
+                <text x="458" y="130" text-anchor="start">Regions and cities</text>
+                <text x="508" y="265" text-anchor="start">Banks</text>
+                <text x="458" y="400" text-anchor="start">Donors</text>
+                <text x="182" y="400" text-anchor="end">Contractors</text>
+                <text x="132" y="265" text-anchor="end">Engineers</text>
+                <text x="182" y="130" text-anchor="end">Communities</text>
+                <text class="table__hostlabel" x="320" y="466" text-anchor="middle">P3nomads</text>
+              </g>
+            </svg>
+          </figure>
+
+          <ul class="forms">
+            <li class="form">
+              <h3><span>Public</span><i aria-hidden="true"></i><span>Public</span></h3>
+              <p>Authorities that share one project, but not one budget or mandate.</p>
+              <p class="form__case">For example: <a href="projects/rijnkade-arnhem.html">Rijnkade Arnhem</a>, where a water board and a city build one riverfront.</p>
+            </li>
+            <li class="form">
+              <h3><span>Public</span><i aria-hidden="true"></i><span>Private</span></h3>
+              <p>A government and the private partner that will design, build, finance or operate.</p>
+              <p class="form__case">For example: <a href="projects/naivasha-sabaki-water.html">Naivasha and Sabaki</a>, two water PPPs in preparation in Kenya.</p>
+            </li>
+            <li class="form">
+              <h3><span>Private</span><i aria-hidden="true"></i><span>Private</span></h3>
+              <p>Consultants, contractors and investors who are stronger as one consortium.</p>
+              <p class="form__case">For example: <a href="projects/water-as-leverage-cartagena.html">Water as Leverage Cartagena</a>, a consortium of eight partners.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Bankability -->
+    <section class="deep band" id="bankability" data-warm="0.5">
+      <div class="wrap">
+        <div class="intro intro--onwater">
+          <h2>A good partnership also has to pay its way.</h2>
+          <p>Financiers commit when the project itself earns enough to carry it. So we design the partnership, the money and the revenues together.</p>
+        </div>
+
+        <div class="chain">
+          <div class="chain__steps" role="radiogroup" aria-label="From partnership to realisation">
+            <label class="chain__step"><input type="radio" name="chain" id="chain-1" checked><span><b>1</b>Partnership</span></label>
+            <label class="chain__step"><input type="radio" name="chain" id="chain-2"><span><b>2</b>Funding and financing</span></label>
+            <label class="chain__step"><input type="radio" name="chain" id="chain-3"><span><b>3</b>Revenues</span></label>
+            <label class="chain__step"><input type="radio" name="chain" id="chain-4"><span><b>4</b>Bankability</span></label>
+            <label class="chain__step"><input type="radio" name="chain" id="chain-5"><span><b>5</b>Realisation</span></label>
+            <div class="chain__track" aria-hidden="true"></div>
+          </div>
+
+          <div class="chain__panels" aria-live="polite">
+            <article class="chain__panel" data-step="1">
+              <h3>Who is at the table, and in what role?</h3>
+              <p>A clear division of roles and risks between the partners is the foundation everything else rests on.</p>
+            </article>
+            <article class="chain__panel" data-step="2">
+              <h3>Who pays in the end, and who pays first?</h3>
+              <p>Funding ultimately pays for the project. Financing is advanced and repaid. We help find the right mix, and the right moment to approach donors, banks and investors.</p>
+            </article>
+            <article class="chain__panel" data-step="3">
+              <h3>What does the project earn once it runs?</h3>
+              <p>Tariffs, availability payments, concessions, compatible economic activity. We look for income that fits the project and its surroundings.</p>
+            </article>
+            <article class="chain__panel" data-step="4">
+              <h3>Would a lender say yes?</h3>
+              <p>We test revenues, risks and contracts against a financier's standard early, while the structure is still easy to change.</p>
+            </article>
+            <article class="chain__panel" data-step="5">
+              <h3>From signed contract to working asset.</h3>
+              <p>We stay involved through procurement and contract management, so the partnership keeps working after the ceremony.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Services -->
+    <section class="sheet" id="services">
+      <div class="wrap split">
+        <div class="split__aside">
+          <h2>What we can take off your hands.</h2>
+          <p>For a single question or the whole journey.</p>
+          <a class="btn btn--blue" href="https://cal.com/faridbouchdak/15min" target="_blank" rel="noopener">Discuss your project</a>
+        </div>
+        <dl class="services">
+          <div>
+            <dt>Project structuring</dt>
+            <dd>Roles, risks and the partnership model that fits.</dd>
+          </div>
+          <div>
+            <dt>Funding and financing</dt>
+            <dd>Preparing the case, joining the talks with financial institutions, and testing development fees, budgets and value for money.</dd>
+          </div>
+          <div>
+            <dt>Independent review for financiers</dt>
+            <dd>A second pair of eyes on procurement plans, tender documents and evaluations, up to the statement of no objection.</dd>
+          </div>
+          <div>
+            <dt>Procurement and tendering</dt>
+            <dd>The right procedure, run with care. Our specialisms are the competitive dialogue and early contractor involvement.</dd>
+          </div>
+          <div>
+            <dt>Contract management</dt>
+            <dd>Keeping a long-term contract healthy during operation and maintenance.</dd>
+          </div>
+          <div>
+            <dt>Training and simulation</dt>
+            <dd>Preparing teams by playing the real thing, such as the <a href="projects/rws-dbfm-simulations.html">DBFM simulations for Rijkswaterstaat</a>, and courses with <a href="https://www.ppp-university.com/" target="_blank" rel="noopener">PPP-University</a>.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 5. Approach -->
+    <section class="sheet sheet--joined" id="approach">
+      <div class="wrap">
+        <figure class="shot shot--wide shot--temp">
+          <img src="img/placeholder-table.jpg" alt="" width="2000" height="900" loading="lazy">
+          <figcaption>
+            <h2>First the relationship, then the contract.</h2>
+            <p>Trust lets partners solve what no contract foresaw. So we work the way a good host does.</p>
+          </figcaption>
+        </figure>
+        <ol class="steps">
+          <li>
+            <h3>We listen first</h3>
+            <p>Your project, your organisation, your people.</p>
+          </li>
+          <li>
+            <h3>We bring everyone to the table</h3>
+            <p>Every party is heard, also the ones easily overlooked.</p>
+          </li>
+          <li>
+            <h3>We put it on paper together</h3>
+            <p>A structure and a contract all partners recognise as their own.</p>
+          </li>
+          <li>
+            <h3>We stay for the journey</h3>
+            <p>Nomads travel light, but do not leave their companions behind.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. Who we work with -->
+    <section class="deep band" id="network" data-warm="0.35">
+      <div class="wrap">
+        <div class="intro intro--onwater">
+          <h2>In good company.</h2>
+          <p>We rarely work alone, and we prefer it that way.</p>
+        </div>
+
+        <ul class="company">
+          <li><a href="clients.html#arcadis">Arcadis</a></li>
+          <li><a href="clients.html#invest-international">Invest International</a></li>
+          <li><a href="clients.html#witteveen-bos">Witteveen+Bos</a></li>
+        </ul>
+        <p class="company__more">We have also worked for <a href="clients.html#enap">ENAP</a>, <a href="clients.html#vei">VEI</a>, the <a href="clients.html#brussels">Brussels-Capital Region</a>, <a href="clients.html#rijkswaterstaat">Rijkswaterstaat</a>, the <a href="clients.html#rdw">RDW</a> and <a href="clients.html#waterschap-rijn-en-ijssel">Waterschap Rijn en IJssel</a>, among others.</p>
+        <p class="company__note">For training and knowledge sharing we work closely with <a href="https://www.ppp-university.com/" target="_blank" rel="noopener">PPP-University</a>.</p>
+
+        <h3 class="brings__title">Projects we are proud to be part of</h3>
+        <ul class="projects">
+          <li>
+            <figure class="shot shot--temp vt-water-as-leverage-cartagena"><img src="img/placeholder-cartagena.jpg" alt="" width="1600" height="1000" loading="lazy"></figure>
+            <h4><a href="projects/water-as-leverage-cartagena.html">Water as Leverage Cartagena</a></h4>
+            <p class="projects__where">Colombia, with Arcadis and Witteveen+Bos</p>
+            <p>Nature-based plans for the city's lagoon and canals. We worked on funding and financing in the consortium's finance team.</p>
+          </li>
+          <li>
+            <figure class="shot shot--temp vt-naivasha-sabaki-water"><img src="img/placeholder-naivasha-sabaki-water.jpg" alt="" width="1600" height="1000" loading="lazy"></figure>
+            <h4><a href="projects/naivasha-sabaki-water.html">Naivasha and Sabaki bulk water</a></h4>
+            <p class="projects__where">Kenya, for Invest International</p>
+            <p>Two water PPPs in preparation. We reviewed the development fees, the joint development agreement and value for money.</p>
+          </li>
+          <li>
+            <figure class="shot shot--temp vt-cool-port-addis"><img src="img/placeholder-addis.jpg" alt="" width="1600" height="1000" loading="lazy"></figure>
+            <h4><a href="projects/cool-port-addis.html">Cool Port Addis</a></h4>
+            <p class="projects__where">Ethiopia, for Invest International</p>
+            <p>Procurement advice and independent review of tender documents and evaluation reports.</p>
+          </li>
+          <li>
+            <figure class="shot shot--temp vt-nile-delta-coastal-protection"><img src="img/placeholder-nile.jpg" alt="" width="1600" height="1000" loading="lazy"></figure>
+            <h4><a href="projects/nile-delta-coastal-protection.html">Coastal protection of the Nile Delta</a></h4>
+            <p class="projects__where">Egypt, with Arcadis for Invest International</p>
+            <p>A feasibility study for nature-based protection. We lead the procurement plan, the PPP approach and contract management.</p>
+          </li>
+          <li>
+            <figure class="shot shot--temp vt-port-bouet-coastal-protection"><img src="img/placeholder-port-bouet-coastal-protection.jpg" alt="" width="1600" height="1000" loading="lazy"></figure>
+            <h4><a href="projects/port-bouet-coastal-protection.html">Coastal protection of Port-Bouët</a></h4>
+            <p class="projects__where">Côte d'Ivoire, for Invest International</p>
+            <p>Review of the selection of the design consultant, and advice on the contract negotiations.</p>
+          </li>
+          <li>
+            <figure class="shot shot--temp vt-enap-san-vicente-dredging"><img src="img/placeholder-enap-san-vicente-dredging.jpg" alt="" width="1600" height="1000" loading="lazy"></figure>
+            <h4><a href="projects/enap-san-vicente-dredging.html">Dredging at the San Vicente terminal</a></h4>
+            <p class="projects__where">Chile, for ENAP</p>
+            <p>Advice on involving dredging contractors early, without compromising a fair tender.</p>
+          </li>
+        </ul>
+        <a class="btn btn--quiet projects__all" href="clients.html">All clients and projects</a>
+      </div>
+    </section>
+
+    <!-- 7. People -->
+    <section class="sheet" id="people">
+      <div class="wrap">
+        <div class="intro">
+          <h2>A small core, a wide circle.</h2>
+          <p>You work with us personally. Around us sits a flexible circle of specialists, so the right expertise is at the table when your project needs it.</p>
+        </div>
+
+        <div class="people">
+          <article class="person">
+            <div class="person__mark" aria-hidden="true">FB</div>
+            <h3>Farid Bouchdak</h3>
+            <p class="person__role">Partner, PPP and contract management</p>
+            <p>Structuring, procurement and contract management of infrastructure, rooted in work for the Dutch government.</p>
+            <a href="https://www.linkedin.com/in/bouchdak/" target="_blank" rel="noopener">Farid on LinkedIn</a>
+          </article>
+          <article class="person">
+            <div class="person__mark" aria-hidden="true">OW</div>
+            <h3>Obbe Wassenaar</h3>
+            <p class="person__role">Partner, PPP and tendering</p>
+            <p>Scoping, legal structuring and tendering. Specialist in the competitive dialogue.</p>
+            <a href="https://www.linkedin.com/in/obbe-wassenaar-464914b" target="_blank" rel="noopener">Obbe on LinkedIn</a>
+          </article>
+          <article class="person">
+            <div class="person__mark" aria-hidden="true">JS</div>
+            <h3>Jan van Schoonhoven</h3>
+            <p class="person__role">Associate adviser, PPP-University</p>
+            <p>Works with us on assignments and has a standing seat at our table, advising and helping to set direction.</p>
+            <a href="https://www.ppp-university.com/" target="_blank" rel="noopener">PPP-University</a>
+          </article>
+          <article class="person person--circle">
+            <div class="person__mark" aria-hidden="true">+</div>
+            <h3>Our circle</h3>
+            <p class="person__role">Specialists on call</p>
+            <p>Trusted experts we bring in when a project asks for knowledge beyond our own.</p>
+          </article>
+        </div>
+
+        <dl class="figures">
+          <div><dt>countries worked in</dt><dd data-count="12">12</dd></div>
+          <div><dt>procurements supported</dt><dd data-count="35">35</dd></div>
+          <div><dt>courses given</dt><dd data-count="34">34</dd></div>
+          <div><dt>professionals trained</dt><dd data-count="612">612</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 8. Invitation -->
+    <section class="deep invite" id="meet" data-warm="1">
+      <div class="wrap">
+        <h2>The tea is ready. Shall we talk?</h2>
+        <p>
+          Tell us about your project in an introductory meeting. No preparation needed and no obligations: we listen, think along and tell you honestly whether we can help.
+        </p>
+        <a class="btn btn--warm btn--large" href="https://cal.com/faridbouchdak/15min" target="_blank" rel="noopener">Choose a date and time</a>
+        <p class="invite__small">A 15-minute call, booked directly in Farid's calendar. Wherever you are, you are welcome.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot deep">
+    <div class="wrap foot__inner">
+      <img src="img/p3nomads-logo-white.png" alt="P3nomads" width="900" height="304" loading="lazy">
+      <nav aria-label="Footer">
+        <a href="#partnerships">Partnerships</a>
+        <a href="#bankability">Bankability</a>
+        <a href="#services">Services</a>
+        <a href="#approach">How we work</a>
+        <a href="#network">Who we work with</a>
+        <a href="clients.html">Clients and projects</a>
+        <a href="#people">People</a>
+      </nav>
+      <p class="foot__legal">© 2018–2026 P3nomads B.V. Based in the Netherlands. Chamber of Commerce (KvK) 96973765.</p>
+    </div>
+  </footer>
+
+  <a class="dock btn btn--warm" href="https://cal.com/faridbouchdak/15min" target="_blank" rel="noopener">Book a meeting</a>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "P3nomads B.V.",
+    "url": "https://p3nomads.com/",
+    "logo": "https://p3nomads.com/img/p3nomads-logo.png",
+    "slogan": "Promoting powerful partnerships",
+    "foundingDate": "2018",
+    "areaServed": "Worldwide",
+    "description": "Advisory firm for public-public, public-private and private-private partnerships in international projects."
+  }
+  </script>
+</body>
+</html>
